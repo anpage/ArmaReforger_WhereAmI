@@ -44,14 +44,4 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 			image.SetColor(Color.Red);
 		}
 	}
-
-	override void OnMapClose(MapConfiguration config)
-	{
-		if(m_widget)
-		{
-			m_widget.RemoveFromHierarchy();
-		}
-
-		super.OnMapClose(config);
-	}
 };
