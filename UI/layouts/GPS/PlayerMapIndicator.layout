@@ -1,0 +1,45 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ Slot FrameWidgetSlot "{58566B97C9A8357C}" {
+  Alignment 0.5 0.5
+  SizeToContent 1
+ }
+ Clipping False
+ {
+  OverlayWidgetClass "{59655502B19E1BB2}" {
+   Name "Overlay"
+   Slot FrameWidgetSlot "{58848D6189A30D49}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX 0
+    OffsetLeft 0
+    PositionY 0
+    OffsetTop 0
+    SizeX 100
+    OffsetRight -100
+    SizeY 100
+    OffsetBottom -100
+    Alignment 0.5 0.5
+   }
+   {
+    SizeLayoutWidgetClass "{59655502B19E1BBC}" {
+     Name "SizeLayout0"
+     Slot OverlayWidgetSlot "{58848D61CEB50E99}" {
+     }
+     AllowWidthOverride 1
+     WidthOverride 100
+     AllowHeightOverride 1
+     HeightOverride 100
+     {
+      ImageWidgetClass "{59655502B19E1BBF}" {
+       Name "Image"
+       Slot AlignableSlot "{58848D612A5C6FF1}" {
+       }
+       Image ""
+       Size 64 64
+      }
+     }
+    }
+   }
+  }
+ }
+}

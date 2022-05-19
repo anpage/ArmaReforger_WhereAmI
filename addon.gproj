@@ -1,0 +1,8 @@
+GameProject {
+ ID "SimpleGPS"
+ GUID "5965550F24A0C152"
+ TITLE "Simple GPS"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
