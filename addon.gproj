@@ -1,7 +1,7 @@
 GameProject {
- ID "SimpleGPS"
+ ID "WhereAmI"
  GUID "5965550F24A0C152"
- TITLE "Simple GPS"
+ TITLE "Where Am I?"
  Dependencies {
   "58D0FB3206B6F859"
  }

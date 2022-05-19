@@ -1,4 +1,4 @@
-class SCR_GpsUI : SCR_MapUIBaseComponent
+class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 {
 	protected Widget m_widget;
 
