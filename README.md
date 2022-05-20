@@ -1,6 +1,6 @@
 # Where Am I?
 
-![Where Am I?](thumbnail.png)
+![Where Am I?](MetaImages/preview.jpg)
 
 ## Description
 
