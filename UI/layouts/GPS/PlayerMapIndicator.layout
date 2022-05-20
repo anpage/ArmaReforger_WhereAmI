@@ -14,10 +14,10 @@ FrameWidgetClass {
     OffsetLeft 0
     PositionY 0
     OffsetTop 0
-    SizeX 100
-    OffsetRight -100
-    SizeY 100
-    OffsetBottom -100
+    SizeX 48
+    OffsetRight -48
+    SizeY 48
+    OffsetBottom -48
     Alignment 0.5 0.5
    }
    {
@@ -26,9 +26,9 @@ FrameWidgetClass {
      Slot OverlayWidgetSlot "{58848D61CEB50E99}" {
      }
      AllowWidthOverride 1
-     WidthOverride 100
+     WidthOverride 48
      AllowHeightOverride 1
-     HeightOverride 100
+     HeightOverride 48
      {
       ImageWidgetClass "{59655502B19E1BBF}" {
        Name "Image"
@@ -36,6 +36,7 @@ FrameWidgetClass {
        }
        Image ""
        Size 64 64
+       "Transition width" 0.35
       }
      }
     }

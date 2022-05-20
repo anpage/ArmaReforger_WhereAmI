@@ -1,6 +1,7 @@
 class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 {
 	protected Widget m_widget;
+	protected SCR_MapToolEntry m_ToolMenuEntry;
 
 	override void Update()
 	{
@@ -36,12 +37,43 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 
 		m_widget = GetGame().GetWorkspace().CreateWidgets("{3513CA0C0C83D2E3}UI/layouts/GPS/PlayerMapIndicator.layout", m_RootWidget);
 
-		ResourceName imageSet = "{C3F217CA9CF060B4}UI/Imagesets/Conflict/ConflictIconsSet.imageset";
+		ResourceName imageSet = "{14A14368AE7FA04D}UI/Textures/Icons/PlayerMarker.imageset";
 		ImageWidget image = ImageWidget.Cast(m_widget.FindAnyWidget("Image"));
 		if(image)
 		{
-			image.LoadImageFromSet(0, imageSet, "OutlineBold");
-			image.SetColor(Color.Red);
+			image.LoadImageFromSet(0, imageSet, "PlayerMarker");
+			image.SetColor(Color.FromRGBA(180, 0, 0, 255));
 		}
+	}
+
+	//------------------------------------------------------------------------------------------------
+	override void Init()
+	{
+		SCR_MapToolMenuModule toolMenu = SCR_MapToolMenuModule.Cast(m_MapEntity.GetMapModule(SCR_MapToolMenuModule));
+		if (toolMenu)
+		{
+			m_ToolMenuEntry = toolMenu.RegisterToolMenuEntry("{14A14368AE7FA04D}UI/Textures/Icons/PlayerMarker.imageset", "PlayerMarker", false, 99);
+			m_ToolMenuEntry.m_OnClick.Insert(ZoomInOnPlayer);
+		}
+	}
+
+	//------------------------------------------------------------------------------------------------
+	protected void ZoomInOnPlayer()
+	{
+		// Reset button color so that it doesn't behave like a toggle
+		m_ToolMenuEntry.SetColor(Color.Gray25);
+
+		ChimeraCharacter player = ChimeraCharacter.Cast(SCR_PlayerController.GetLocalControlledEntity());
+		if (!player)
+		{
+			return;
+		}
+
+		vector posPlayer = player.GetOrigin();
+
+		vector mapSize = m_MapEntity.GetMapWidget().GetSizeInUnits();
+		float zoomVal = mapSize[0] / (mapSize[0] * (m_MapEntity.GetMapWidget().PixelPerUnit() * 1.5));
+
+		m_MapEntity.ZoomPanSmooth(zoomVal,posPlayer[0],posPlayer[2]);
 	}
 };
