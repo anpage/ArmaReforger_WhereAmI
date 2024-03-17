@@ -3,7 +3,7 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 	protected Widget m_widget;
 	protected SCR_MapToolEntry m_ToolMenuEntry;
 
-	override void Update()
+	override void Update(float timeSlice)
 	{
 		if (!m_widget)
 			return;
@@ -49,10 +49,10 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 	//------------------------------------------------------------------------------------------------
 	override void Init()
 	{
-		SCR_MapToolMenuModule toolMenu = SCR_MapToolMenuModule.Cast(m_MapEntity.GetMapModule(SCR_MapToolMenuModule));
+		SCR_MapToolMenuUI toolMenu = SCR_MapToolMenuUI.Cast(m_MapEntity.GetMapUIComponent(SCR_MapToolMenuUI));
 		if (toolMenu)
 		{
-			m_ToolMenuEntry = toolMenu.RegisterToolMenuEntry("{14A14368AE7FA04D}UI/Textures/Icons/PlayerMarker.imageset", "PlayerMarker", false, 99);
+			m_ToolMenuEntry = toolMenu.RegisterToolMenuEntry("{14A14368AE7FA04D}UI/Textures/Icons/PlayerMarker.imageset", "PlayerMarker", 99);
 			m_ToolMenuEntry.m_OnClick.Insert(ZoomInOnPlayer);
 		}
 	}
@@ -60,9 +60,6 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 	//------------------------------------------------------------------------------------------------
 	protected void ZoomInOnPlayer()
 	{
-		// Reset button color so that it doesn't behave like a toggle
-		m_ToolMenuEntry.SetColor(Color.Gray25);
-
 		ChimeraCharacter player = ChimeraCharacter.Cast(SCR_PlayerController.GetLocalControlledEntity());
 		if (!player)
 		{
