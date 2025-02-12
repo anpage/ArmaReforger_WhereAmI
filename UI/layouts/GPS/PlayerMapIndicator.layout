@@ -21,6 +21,21 @@ FrameWidgetClass {
     Alignment 0.5 0.5
    }
    {
+    SizeLayoutWidgetClass "{6498156836419EA3}" {
+     Name "SizeLayout1"
+     Slot OverlayWidgetSlot "{6498156836419E8C}" {
+     }
+     {
+      ImageWidgetClass "{64981568433D0362}" {
+       Name "LineImage"
+       Slot AlignableSlot "{6498156837EA3235}" {
+       }
+       Color 0.706 0 0 1
+       Texture "{78F5B5E2944A716F}UI/Textures/Icons/PlayerMarkerLine.edds"
+       Size 128 128
+      }
+     }
+    }
     SizeLayoutWidgetClass "{59655502B19E1BBC}" {
      Name "SizeLayout0"
      Slot OverlayWidgetSlot "{58848D61CEB50E99}" {
@@ -31,11 +46,12 @@ FrameWidgetClass {
      HeightOverride 48
      {
       ImageWidgetClass "{59655502B19E1BBF}" {
-       Name "Image"
+       Name "CircleImage"
        Slot AlignableSlot "{58848D612A5C6FF1}" {
        }
-       Image ""
-       Size 64 64
+       Color 0.706 0 0 1
+       Texture "{2DD62041DEE9157F}UI/Textures/Icons/PlayerMarker.edds"
+       Size 128 128
        "Transition width" 0.35
       }
      }

@@ -11,5 +11,7 @@ MetaFileClass {
   }
   ImageSetResourceClass HEADLESS : PC {
   }
+  ImageSetResourceClass PS5 : PC {
+  }
  }
 }

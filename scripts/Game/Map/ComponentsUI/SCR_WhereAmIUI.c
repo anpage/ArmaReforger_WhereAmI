@@ -2,6 +2,7 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 {
 	protected Widget m_widget;
 	protected SCR_MapToolEntry m_ToolMenuEntry;
+	protected ImageWidget m_DirectionImage;
 
 	override void Update(float timeSlice)
 	{
@@ -24,6 +25,13 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 		y = GetGame().GetWorkspace().DPIUnscale(y);
 
 		FrameSlot.SetPos(m_widget, x, y);
+		
+		vector rotPlayer = player.GetYawPitchRoll();
+
+		if(m_DirectionImage)
+		{
+			m_DirectionImage.SetRotation(rotPlayer[0]);
+		}
 	}
 
 	override void OnMapOpen(MapConfiguration config)
@@ -36,14 +44,7 @@ class SCR_WhereAmIUI : SCR_MapUIBaseComponent
 		}
 
 		m_widget = GetGame().GetWorkspace().CreateWidgets("{3513CA0C0C83D2E3}UI/layouts/GPS/PlayerMapIndicator.layout", m_RootWidget);
-
-		ResourceName imageSet = "{14A14368AE7FA04D}UI/Textures/Icons/PlayerMarker.imageset";
-		ImageWidget image = ImageWidget.Cast(m_widget.FindAnyWidget("Image"));
-		if(image)
-		{
-			image.LoadImageFromSet(0, imageSet, "PlayerMarker");
-			image.SetColor(Color.FromRGBA(180, 0, 0, 255));
-		}
+		m_DirectionImage = ImageWidget.Cast(m_widget.FindAnyWidget("LineImage"));
 	}
 
 	//------------------------------------------------------------------------------------------------

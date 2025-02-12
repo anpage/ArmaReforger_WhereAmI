@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 128 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(2.82276,0,0,2.82276,-3236.1,-2017.76)">
-        <g transform="matrix(0.941177,0,0,0.941177,69.0544,43.0883)">
-            <circle cx="1168.8" cy="737.803" r="17.944" style="fill:none;stroke:white;stroke-width:1.45px;"/>
+<svg
+   width="100%"
+   height="100%"
+   viewBox="0 0 128 128"
+   version="1.1"
+   xml:space="preserve"
+   style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
+   id="svg2"
+   sodipodi:docname="PlayerMarker.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs2" /><sodipodi:namedview
+   id="namedview2"
+   pagecolor="#656565"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="3.4101563"
+   inkscape:cx="47.358534"
+   inkscape:cy="25.072165"
+   inkscape:window-width="2048"
+   inkscape:window-height="1082"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g2" />
+    <g
+   transform="matrix(2.82276,0,0,2.82276,-3236.1,-2017.76)"
+   id="g2">
+        <g
+   transform="matrix(0.941177,0,0,0.941177,69.0544,43.0883)"
+   id="g1">
+            <circle
+   cx="1168.8"
+   cy="737.803"
+   r="17.944"
+   style="fill:none;stroke:white;stroke-width:1.44990991;stroke-dasharray:none"
+   id="circle1" />
         </g>
-        <path d="M1167.43,758.113C1162.98,757.756 1158.92,755.986 1155.71,753.252M1182.5,753.252C1179.29,755.986 1175.23,757.757 1170.77,758.113M1189.73,739.162C1189.37,743.617 1187.6,747.675 1184.86,750.889M1153.34,750.889C1150.61,747.676 1148.84,743.617 1148.48,739.162M1148.48,735.821C1148.84,731.366 1150.61,727.308 1153.34,724.094M1184.86,724.094C1187.6,727.307 1189.37,731.366 1189.73,735.821M1170.77,716.87C1175.23,717.227 1179.29,718.997 1182.5,721.732M1155.71,721.732C1158.92,718.997 1162.98,717.227 1167.43,716.87" style="fill:none;stroke:white;stroke-width:1.84px;"/>
+        <path
+   d="M1167.43,758.113C1162.98,757.756 1158.92,755.986 1155.71,753.252M1182.5,753.252C1179.29,755.986 1175.23,757.757 1170.77,758.113M1189.73,739.162C1189.37,743.617 1187.6,747.675 1184.86,750.889M1153.34,750.889C1150.61,747.676 1148.84,743.617 1148.48,739.162M1148.48,735.821C1148.84,731.366 1150.61,727.308 1153.34,724.094M1184.86,724.094C1187.6,727.307 1189.37,731.366 1189.73,735.821M1170.77,716.87C1175.23,717.227 1179.29,718.997 1182.5,721.732M1155.71,721.732C1158.92,718.997 1162.98,717.227 1167.43,716.87"
+   style="fill:none;stroke:white;stroke-width:1.84004308;stroke-dasharray:none"
+   id="path1" />
     </g>
-</svg>
+<path
+   style="fill:none;stroke:#ffffff;stroke-width:5.194;stroke-dasharray:none;stroke-opacity:1"
+   d="M 64,64 V 17.494419"
+   id="path2"
+   sodipodi:nodetypes="cc" /></svg>
