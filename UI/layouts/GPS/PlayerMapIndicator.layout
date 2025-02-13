@@ -30,6 +30,7 @@ FrameWidgetClass {
        Name "LineImage"
        Slot AlignableSlot "{6498156837EA3235}" {
        }
+       "Is Visible" 0
        Color 0.706 0 0 1
        Texture "{78F5B5E2944A716F}UI/Textures/Icons/PlayerMarkerLine.edds"
        Size 128 128
